@@ -11,7 +11,7 @@ import userRouter from './routers/user.router.js'
 import courseRouter from './routers/course.router.js'
 app.use('/api/v1/user',userRouter)
 app.use('/api/v1/addcourse',courseRouter)
-app.use('/pong',(req,res)=>{
+app.use('/',(req,res)=>{
     res.send("Hello World")
 })
 export default app
